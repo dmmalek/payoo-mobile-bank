@@ -10,6 +10,7 @@ function getInputTextField(id) {
 function toggleFunction(id) {
     document.getElementById('add-money-form').classList.add('hidden');
     document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('transaction-form').classList.add('hidden')
 
     //which id will be shown
     const toggleId = document.getElementById(id).classList.remove('hidden');
@@ -44,3 +45,5 @@ function balanceValidation(balance, mainBalance) {
         throw new Error;
     }
 }
+
+
